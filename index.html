@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- descripcion -->
+    <meta name="description" content="Catus .">
+    <meta name="keywords" content="Catus, distribuidora mayorista, sanitarios, radiadores, calderas, Bahía Blanca, productos sanitarios, calefacción, repuestos, instalaciones, ventas mayoristas">
+    <meta name="author" content="Florencia Cardinali - 2025">
+    <meta name="robots" content="index, follow">
+    <!-- posicionamiento global -->
+    <meta name="geo.region" content="AR-B">
+    <meta name="geo.placename" content="Bahía Blanca">
+    <meta name="geo.position" content="-38.7183;-62.2659">
+    <meta name="ICBM" content="-38.7183, -62.2659">
+    <title>Catus Online</title>
+    <!-- conexiones -->
+    <link rel="icon" href="/assets/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <!-- scripts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'marron-50': '#f6f6f6',
+              'marron-100': '#e7e7e7',
+              'marron-200': '#d1d1d1',
+              'marron-300': '#b0b0b0',
+              'marron-400': '#909090',
+              'marron-500': '#6d6d6d',
+              'marron-600': '#5d5d5d',
+              'marron-700': '#4f4f4f',
+              'marron-800': '#454545',
+              'marron-900': '#3d3d3d',
+              'marron-950': '#262626',
+            },
+            fontFamily: {
+              'gotic' : ['League Gothic','Arial'],
+              'oswald' : ['Oswald, Arial']
+            },
+            backgroundImage: {
+              'hero': "url('/assets/A1.webp')",
+              'logo' : "url('/assets/logo.png')"
+            }
+          }
+        }
+      }
+    </script>
+   
+</head>
+
+<body class="overflow-x-hidden">
+
+  <!-- navbar -->
+  <header class="fixed top-0 w-screen font-gotic text-2xl text-stone-300 bg-black/70 overflow-hidden ">
+    
+    <div class="md:p-2 mx-4 flex flex-row justify-between items-center h-[60px]">
+      <!-- boton hamburgeusa -->
+      <button id="menu-btn" class="flex md:hidden text-gray-700 focus:outline-none">
+        <svg class="w-6 h-6" color="#ffffff" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+       <!-- nav hamburguesa -->
+      <nav id="menu-hamburguesa" class="hidden bg-black/70 w-screen fixed left-0 top-[59px] z-1 flex flex-col items-start pl-10 py-5 gap-4 justify-center">
+        <!-- LINK A CATALOGO -->
+        <a href="" class="text-3xl cursor-pointer hover:text-marron-100">Productos</a>
+
+        <a href="#nosotros" class="text-3xl cursor-pointer hover:text-marron-100">Nosotros</a>
+      </nav>
+
+
+      <!-- boton del icono de catus -->
+      <a class="hidden cursor-pointer md:flex justify-center mb-4 md:mb-0 w-14">
+        <div class="bg-contain bg-no-repeat bg-logo w-8 h-10 block"></div>
+      </a>
+
+      <!-- links del nav extendido-->
+      <nav class="hidden md:mr-auto md:ml-4 md:py-1 md:pl-10 md:flex items-center justify-center border-l-2">
+        <!-- LINK A CATALOGO -->
+        <a href="" class="cursor-pointer mr-5 hover:text-marron-100">Productos</a>
+        <a href="#nosotros" class="cursor-pointer mr-5 hover:text-marron-100">Nosotros</a>
+      </nav>
+      <!-- LINK A SERVICIO DE LOGIN -->
+      <button id="iniciar-sesion" class="inline-flex items-center border-0 py-1 px-8 focus:outline-none hover:text-marron-200 rounded text-marron-50 text-[32px] md:text-3xl h-16">
+        Iniciar sesion
+      </button>
+
+
+     
+
+    </div>
+  </header>
+
+<!-- hero -->
+  <main class="overflow-hidden w-screen">
+    <!-- hero -->
+    <section id="hero" class="flex pt-10 items-center bg-hero bg-cover bg-no-repeat bg-right bg-black w-screen h-screen" >
+      
+      <div class="mt-10 bg-marron-900/60 flex flex-col py-20 
+      px-12 w-screen max-h-[85vh] md:w-[70vw] lg:w-[50vw] md:max-h-[70vh] justify-center gap-3 text-center md:text-left">
+          <h1 class="text-4xl sm:text-5xl md:text-7xl text-marron-100 font-gotic">
+            Tu distribuidora <br>
+            mayorista.
+          </h1>
+          <span class="text-[20px] md:text-[25px] text-marron-200 bold">Servicio en Bahia Blanca y la zona.</span>
+          <!-- botonera del hero -->
+          <div class="md:scale-100 scale-75 flex gap-5 mt-10 text-2xl font-oswald justify-center md:justify-start ">
+            <!-- IMPORTANTE PARA CONECTAR A CATALOGO Y CONTACTO -->
+            <button class="px-3 py-2 bg-marron-300 rounded hover:bg-marron-100">CONTACTO</button>
+            <button class="px-3 py-2 bg-marron-200 rounded hover:bg-marron-100">CATÁLOGO</button>
+          </div>
+      </div>
+    </section>
+
+    <!-- about -->
+      <section id="nosotros" class="flex flex-col items-center gap-12 justify-center font-oswald bg-marron-300 p-20 pb-40 w-screen">
+        <h3 class="text-3xl text-marron-500">Nosotros</h3>
+        <p class="text-xl w-[75vw]">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis facere soluta consequuntur expedita. Qui, sed quod harum debitis ab quo asperiores ex quae. Nemo sit quibusdam optio necessitatibus impedit!
+          Iste ratione aliquam placeat, commodi praesentium iure recusandae similique adipisci reiciendis quibusdam exercitationem incidunt nesciunt! Inventore, illum sit exercitationem iste quibusdam, sunt iusto est laudantium saepe voluptas accusamus! Eaque, enim.
+          Odio numquam atque optio possimus, exercitationem vitae saepe enim, in rem eum iusto id inventore dignissimos error, placeat maxime reprehenderit. Amet, optio expedita reiciendis non cumque adipisci consequatur eaque obcaecati.
+          Tempora magni laboriosam voluptates soluta quaerat tenetur cum ut, hic quod? Corrupti iusto ex modi exercitationem veritatis incidunt libero impedit ipsum necessitatibus numquam repellat ducimus odit a minima, reiciendis fugiat!
+          Iure soluta dicta quod maxime dolores laudantium saepe suscipit eveniet ipsam cumque, distinctio illum, beatae ducimus omnis, labore aliquid veniam necessitatibus sequi corporis fugiat. A consequuntur accusantium alias soluta itaque!
+        </p>
+      </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="w-screen flex flex-col p-0 text-marron-200 font-oswald bg-marron-600">
+    <!-- parte superior del footer -->
+    <div class="w-screen md:p-[5vw] pt-5 px-2 gap-5 md:pt-12 flex justify-between items-center ">
+      <!-- parte logo -->
+      <div class="flex items-center ">
+          <!-- logo footer -->
+          <span class="bg-logo min-w-14 min-h-16 bg-contain bg-no-repeat"></span>
+          <!-- texto catus sa -->
+          <div class="flex flex-col md:scale-100 scale-[70%]">
+            <span class=" text-4xl font-gotic">CATUS S.A</span>
+            <p class="mt-2 text-6xs text-marron-300">(8000) Bahia Blanca - Buenos Aires - Argentina.</p>
+          </div>
+      </div>
+
+      <!-- parte links -->
+      <div class="md:scale-100 scale-75 mt-12 flex flex-col flex-wrap gap-3 text-right">
+          <h2 class="text-marron-300 text-xl">REDES</h2>
+          <nav class="list-none mb-10 font-oswald">
+            <li>
+              <a target="_blank" href="https://wa.me/5492914161946" class="">Whatsupp</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.instagram.com/catus.distribuidora/?hl=es" class="">Instagram</a>
+            </li>
+            <li>
+              <a class="">ventas@catusonline.com</a>
+            </li>
+          </nav>
+      </div>
+
+    </div>
+    <!-- parte inferior del footer -->
+    <div class="bg-marron-500">
+      <div class="container py-4 px-5 flex flex-wrap ">
+        <!-- creditos -->
+        <p class="text-marron-300 text-sm text-right w-screen">© 2024 Cardinali Florencia —
+          <a href="https://www.linkedin.com/in/florencia-cardinali/" class="text-marron-200 ml-1" target="_blank">FlorenciaCardinali</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+ <script>
+      const menuBtn = document.getElementById('menu-btn');
+      const menu = document.getElementById('menu-hamburguesa');
+
+      menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</html>
